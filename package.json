@@ -10,6 +10,9 @@
   "preferGlobal": true,
   "bin": "bin/apidocSwagger.js",
   "main": "./lib/index.js",
+  "scripts": {
+    "test": "./test/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/fsbahman/apidoc-swagger.git"
@@ -30,15 +33,18 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "apidoc-core": "0.3.1",
+    "apidoc-core": "^0.8.2",
     "fs-extra": "^0.16.5",
     "lodash": "^3.5.0",
-    "marked": "^0.3.3",
+    "markdown-it": "^8.2.2",
     "nomnom": "^1.8.1",
     "path-to-regexp": "^1.2.0",
     "winston": "^0.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "shelljs": "^0.7.6",
+    "swagger-tools": "^0.10.1"
+  },
   "jshintConfig": {
     "camelcase": true,
     "curly": false,
