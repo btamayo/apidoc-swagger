@@ -30,7 +30,7 @@
     "swagger"
   ],
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 6.9.2"
   },
   "dependencies": {
     "apidoc-core": "^0.8.2",
