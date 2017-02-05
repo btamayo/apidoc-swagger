@@ -36,7 +36,10 @@ def getPet():
 
     @apiParam {String} petId the id of the pet
 
-    @apiSuccess {json} pet pet
+    @apiParam {String} appKey Application Key to access the API
+    @apiParam {String} appSecret Application Key Secret to access the API
+
+    @apiSuccess {object} pet pet
     @apiSuccessExample {json} Example 200 Response
       TODO
     """
@@ -52,8 +55,10 @@ def updatePet():
     @apiVersion 0.2.0
     @apiDescription updates pet
 
-    @apiParam {String} appKey Application Key to access the API
-    @apiParam {String} appSecret Application Key Secret to access the API
+    @apiParam {String} petId id of pet to update
+
+    @apiParam {String} [appKey] Application Key to access the API
+    @apiParam {String} [appSecret] Application Key Secret to access the API
 
     @apiParam {String} petUpdate update
     @apiParam {String} petUpdateField update
