@@ -1,5 +1,15 @@
+__NOTE__: [This repo](https://github.com/btamayo/apidoc-swagger) is a fork of the original [apidoc-swagger](https://github.com/fsbahman/apidoc-swagger) npm module. It is still currently in development.
+
+- ✅ Switch from marked to markdown-it
+- ✅ Update node engine from 0.10 to 6.9.2
+- ✅ Update to apicore 0.8
+- Add tests
+- Comply with apidoc spec
+
+----
+
 # apidoc-swagger
-apidoc and swagger are two nice projects which are focusing on documentation of APIs. 
+apidoc and swagger are two nice projects which are focusing on documentation of APIs.
 This project is a middle tier which tries to bring them together in a sense that:
 > It uses apidoc to convert inline documentation comments into json schema and later convert it to swagger json schmea.
 
