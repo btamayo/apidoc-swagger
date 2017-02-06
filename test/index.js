@@ -1,7 +1,7 @@
 require('shelljs/global');
 
 const fs = require('fs');
-const chai = require('chai'),
+const chai   = require('chai'),
       expect = chai.expect,
       should = chai.should(),
       assert = chai.assert;
@@ -24,7 +24,9 @@ describe('APIDOC: basic validation', function() {
   });
 
   it('should return valid JSON', function() {
-    let jsonFn = function() { JSON.parse(fs.readFileSync(SWAGGER_OUT_PATH)); };
+    let jsonFn = function() {
+      JSON.parse(fs.readFileSync(SWAGGER_OUT_PATH));
+    };
     expect(jsonFn).to.not.throw('good function!');
   });
 
