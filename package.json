@@ -11,7 +11,8 @@
   "bin": "bin/apidocSwagger.js",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "./test/index.js"
+    "start": "node index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,8 @@
     "winston": "^0.9.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "shelljs": "^0.7.6",
     "swagger-tools": "^0.10.1"
   },
