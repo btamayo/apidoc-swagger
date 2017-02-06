@@ -56,5 +56,77 @@
     },
     "filename": "./sample_api_raw.py",
     "groupTitle": "pet"
+  },
+  {
+    "type": "post",
+    "url": "/pets/:petId",
+    "title": "/pets/:petId",
+    "name": "postPet",
+    "group": "pet",
+    "version": "0.2.0",
+    "description": "<p>Adds a new pet to the store</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "petId",
+            "description": "<p>the id of the pet</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "appKey",
+            "description": "<p>Application Key to access the API</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "appSecret",
+            "description": "<p>Application Key Secret to access the API</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>pet's name</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": true,
+            "field": "nickname",
+            "description": "<p>optional pet's nickname</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "pet",
+            "description": "<p>pet</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Example 200 Response",
+          "content": "TODO",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "./sample_api_raw.py",
+    "groupTitle": "pet"
   }
 ]
